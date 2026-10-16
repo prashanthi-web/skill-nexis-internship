@@ -1,177 +1,203 @@
-# Skill Nexis – Machine Learning & AI Internship
+# Skill Nexis – Machine Learning and AI Internship
 
-This repository documents my learning journey, weekly assignments, and hands-on projects completed as part of the **Skill Nexis Machine Learning & AI Internship**.
+This repository contains the projects, assignments, and practical work completed as part of the Skill Nexis Machine Learning and AI Internship. It documents my learning journey through data preprocessing, supervised learning, regression, classification, unsupervised learning, dimensionality reduction, and model evaluation.
 
-The internship provides practical experience in data preprocessing, exploratory data analysis, supervised machine learning, regression, classification, model evaluation, and data visualization using Python.
+## Table of Contents
 
-## 🎯 Internship Objectives
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Week 1 – Data Cleaning and Preprocessing](#week-1--titanic-survival-prediction-data-cleaning)
+- [Week 2 – Supervised Learning](#week-2--supervised-learning)
+- [Week 3 – Unsupervised Learning and Model Evaluation](#week-3--unsupervised-learning-and-model-evaluation)
+- [Repository Structure](#repository-structure)
+- [Key Learning Outcomes](#key-learning-outcomes)
+- [Conclusion](#conclusion)
 
-- Understand fundamental Machine Learning and AI concepts.
-- Perform data cleaning and preprocessing on real-world datasets.
-- Explore datasets using statistical analysis and visualization.
-- Build regression and classification models.
-- Evaluate model performance using appropriate metrics.
-- Apply machine learning concepts through practical assignments and mini-projects.
-- Maintain and document project work using Git and GitHub.
+## Overview
 
-## 🛠️ Technologies and Tools
+The internship focuses on applying machine learning concepts to practical datasets. Each week's work involves data exploration, implementation using Python libraries, visualization, model building, and analysis of results.
+
+## Technologies Used
 
 - **Programming Language:** Python
-- **Data Analysis:** Pandas, NumPy
-- **Data Visualization:** Matplotlib, Seaborn
-- **Machine Learning:** Scikit-learn
+- **Data Analysis:** pandas, NumPy
+- **Visualization:** Matplotlib
+- **Machine Learning:** scikit-learn
+- **Model Persistence:** joblib
 - **Development Environment:** Jupyter Notebook
-- **Version Control:** Git, GitHub
-- **Datasets:** Titanic Dataset and Kaggle House Prices Dataset
+- **Version Control:** Git and GitHub
 
-## 📂 Repository Structure
+## Week 1 – Titanic Survival Prediction: Data Cleaning
+
+### Objective
+
+Explore and clean the Titanic passenger dataset to prepare it for machine learning.
+
+### Tasks Performed
+
+- Loaded and explored the Titanic dataset.
+- Inspected dataset structure and data types.
+- Checked for missing values and data quality issues.
+- Performed data preprocessing and feature preparation.
+- Created a cleaned dataset for further analysis.
+
+### Project Files
+
+Folder: `Week 1- Titanic Survival Prediction/`
+
+- `Titanic-Dataset.csv` – Original dataset.
+- `cleaned_titanic.csv` – Cleaned dataset.
+- `titanic_survival_predictions.csv` – Survival prediction results.
+- `week1_titanic_cleaning.ipynb` – Data cleaning notebook.
+- `week2_titanic_logistic_regression.ipynb` – Titanic classification notebook.
+
+### Skills Gained
+
+Data loading, exploratory data analysis, data cleaning, preprocessing, handling categorical features, and preparing datasets for machine learning.
+
+## Week 2 – Supervised Learning
+
+### Objective
+
+Apply supervised machine learning techniques to prediction problems involving regression and classification.
+
+### Topics Covered
+
+- Linear Regression
+- Logistic Regression
+- Decision Trees and Random Forests
+- Model evaluation concepts
+- Mean Squared Error (MSE)
+- R² score
+- Confusion Matrix
+
+### Project 1: Titanic Survival Classification
+
+Applied Logistic Regression to the Titanic dataset to explore passenger survival prediction as a classification problem.
+
+### Project 2: House Price Prediction
+
+Built a regression model to predict house prices using the provided housing dataset.
+
+### Tasks Performed
+
+- Loaded and explored the dataset.
+- Prepared features for model training.
+- Trained a regression model for house price prediction.
+- Generated predicted and actual value comparisons.
+- Visualized the model results.
+
+### Project Files
+
+Folder: `Week 2- House Price Prediction/`
+
+- `train.csv` – Housing training dataset.
+- `week2_house_price_prediction.ipynb` – House price prediction notebook.
+- `output graph.png` – Prediction visualization.
+
+### Skills Gained
+
+Supervised learning, regression, classification, model training, prediction, and visualization of model results.
+
+## Week 3 – Unsupervised Learning and Model Evaluation
+
+### Project: Iris Flower Clustering
+
+### Objective
+
+Apply unsupervised learning techniques to discover patterns and clusters in the Iris flower dataset without using species labels during training.
+
+### Topics Covered
+
+- K-Means Clustering
+- Feature Scaling using StandardScaler
+- Elbow Method for choosing K
+- Principal Component Analysis (PCA)
+- Cluster visualization
+- Silhouette Score
+- Adjusted Rand Index (ARI)
+- Saving and loading models using joblib
+
+### Dataset
+
+The Iris dataset contains 150 samples, four numerical features, and three species:
+
+- Setosa
+- Versicolor
+- Virginica
+
+The project uses the Iris dataset provided by scikit-learn.
+
+### Tasks Performed
+
+1. Loaded and explored the Iris dataset.
+2. Standardized the four numerical features.
+3. Used the Elbow Method to examine different cluster counts.
+4. Applied K-Means clustering with `k=3`.
+5. Used PCA to reduce four features to two principal components.
+6. Visualized predicted clusters and actual species.
+7. Compared cluster assignments with the true labels.
+8. Evaluated the results using the Silhouette Score and Adjusted Rand Index.
+9. Saved and reloaded the trained model using joblib.
+
+### Project Files
+
+Folder: `Week 3- Iris Flower Clustering/`
+
+- `iris_flower_clustering.ipynb` – Complete clustering notebook.
+- `iris_clustering_results.csv` – Dataset features, actual labels, predicted clusters, and PCA coordinates.
+- `iris_clusters_pca.png` – PCA cluster visualization.
+- `elbow_method.png` – Elbow-method graph.
+- `kmeans_iris_model.joblib` – Saved model and preprocessing objects.
+
+### Skills Gained
+
+Unsupervised machine learning, clustering, feature scaling, dimensionality reduction, visualization, cluster evaluation, and model persistence.
+
+## Repository Structure
 
 ```text
 skill-nexis-internship/
 │
+├── README.md
+│
 ├── Week 1- Titanic Survival Prediction/
-│   ├── week1_titanic_cleaning.ipynb
-│   ├── week2_titanic_logistic_regression.ipynb
 │   ├── Titanic-Dataset.csv
 │   ├── cleaned_titanic.csv
-│   └── titanic_survival_predictions.csv
+│   ├── titanic_survival_predictions.csv
+│   ├── week1_titanic_cleaning.ipynb
+│   └── week2_titanic_logistic_regression.ipynb
 │
 ├── Week 2- House Price Prediction/
-│   ├── week2_house_price_prediction.ipynb
 │   ├── train.csv
-│   └── output graph.png
+│   ├── output graph.png
+│   └── week2_house_price_prediction.ipynb
 │
-└── README.md
+└── Week 3- Iris Flower Clustering/
+    ├── iris_flower_clustering.ipynb
+    ├── iris_clustering_results.csv
+    ├── iris_clusters_pca.png
+    ├── elbow_method.png
+    └── kmeans_iris_model.joblib
 ```
 
-*The structure above represents the intended organization. Actual filenames and locations may differ depending on the files saved locally.*
+## Key Learning Outcomes
 
----
+Through these projects, I have gained practical experience in:
 
-## 📅 Internship Progress and Projects
-
-### Week 1 – Data Cleaning and Preprocessing
-
-**Project: Titanic Dataset Data Cleaning**
-
-**Objective:** Clean and prepare the Titanic passenger dataset for analysis and machine learning.
-
-**Tasks completed:**
-- Loaded the dataset using Pandas.
-- Explored dataset dimensions, column types, and descriptive statistics.
-- Identified missing values in the dataset.
-- Filled missing `Age` values using the median.
-- Filled missing `Embarked` values using the mode.
-- Removed the `Cabin` column because it contained extensive missing data.
-- Encoded categorical variables, including passenger sex and embarkation port.
-- Visualized age distribution using a histogram.
-- Exported the cleaned dataset to a CSV file.
-- Verified that the cleaned dataset contained no remaining missing values.
-
-**Tools:** Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn.
-
-**Learning outcome:** Gained practical experience in data exploration, handling missing values, categorical encoding, and preparing data for machine learning.
-
-### Week 2 – Assignment 1: House Price Prediction
-
-**Project: House Price Prediction Model**
-
-**Objective:** Predict house sale prices using a Linear Regression model trained on the Kaggle House Prices dataset.
-
-**Tasks completed:**
-- Loaded and explored the housing dataset.
-- Selected relevant numerical features, including overall quality, living area, garage capacity, basement area, first-floor area, full bathrooms, and year built.
-- Prepared input features and the target variable, `SalePrice`.
-- Split the dataset into training and testing sets.
-- Trained a Linear Regression model.
-- Generated house price predictions.
-- Evaluated the model using R² score and Mean Squared Error (MSE).
-- Created an actual-versus-predicted visualization.
-
-**Evaluation metrics:**
-- **R² Score:** Approximately 0.7955, as previously reported.
-- **Mean Squared Error (MSE):** Approximately 1,568,368,656.55, as previously reported.
-
-*These values should be verified against the final notebook run before being treated as final results.*
-
-**Tools:** Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn.
-
-**Learning outcome:** Practiced regression modelling, feature selection, train-test splitting, price prediction, and regression evaluation.
-
-### Week 2 – Assignment 2: Titanic Survival Prediction
-
-**Project: Titanic Survival Classification using Logistic Regression**
-
-**Objective:** Predict whether a Titanic passenger survived using a supervised classification algorithm.
-
-**Tasks completed:**
-- Loaded and explored the Titanic dataset.
-- Selected passenger class, sex, age, family details, fare, and embarkation port as model features.
-- Handled missing values in the age and embarkation columns.
-- Encoded categorical variables using one-hot encoding.
-- Split the dataset into training and testing sets, using an 80:20 ratio.
-- Trained a Logistic Regression model.
-- Predicted survival outcomes for the test dataset.
-- Evaluated the model using accuracy, a classification report, and a confusion matrix.
-- Visualized actual and predicted survival values.
-- Saved prediction results to a CSV file.
-
-**Evaluation metrics:**
-- Accuracy: To be recorded from the final notebook execution.
-- Classification report: Precision, recall, and F1-score.
-- Confusion matrix: Comparison of actual and predicted classes.
-
-**Tools:** Python, Pandas, Matplotlib, Seaborn, Scikit-learn.
-
-**Learning outcome:** Practiced classification, categorical feature encoding, model training, prediction, and classification evaluation.
-
----
-
-## 📊 Machine Learning Concepts Practiced
-
-| Concept | Application |
-|---|---|
-| Data cleaning | Titanic dataset |
-| Missing value handling | Age and embarkation data |
-| Categorical encoding | Sex and Embarked |
-| Exploratory data analysis | Titanic and house prices |
-| Linear Regression | House price prediction |
-| Logistic Regression | Titanic survival prediction |
-| Train-test split | Model validation |
-| R² score and MSE | Regression evaluation |
-| Accuracy and confusion matrix | Classification evaluation |
-| Data visualization | Histograms, prediction plots, and confusion matrix |
-
-## 📚 Key Learnings So Far
-
-- Loading, inspecting, and cleaning datasets using Pandas.
-- Handling missing values and encoding categorical data.
+- Loading, inspecting, and cleaning datasets.
 - Performing exploratory data analysis.
-- Selecting relevant features for machine learning.
-- Building regression and classification models with Scikit-learn.
-- Splitting datasets into training and testing sets.
-- Making predictions and evaluating model performance.
-- Visualizing model outputs and saving results.
-- Organizing project files and documenting work with GitHub.
+- Preparing features for machine learning.
+- Understanding regression and classification.
+- Training and evaluating machine learning models.
+- Applying K-Means clustering to unlabeled data.
+- Reducing feature dimensions using PCA.
+- Visualizing data and model predictions.
+- Saving and reloading trained machine learning models.
+- Organizing projects and maintaining code using Git and GitHub.
 
-## 🚀 Future Improvements
+## Conclusion
 
-- Complete and validate all model evaluation results.
-- Experiment with Decision Tree and Random Forest algorithms.
-- Explore additional feature engineering techniques.
-- Compare different models and improve predictive performance.
-- Document upcoming weekly assignments and mini-projects as the internship progresses.
+The Skill Nexis Machine Learning and AI Internship provides practical exposure to data analysis and machine learning workflows. The projects demonstrate progressive learning from data cleaning and supervised prediction to unsupervised clustering and dimensionality reduction.
 
-## 👩‍💻 Author
-
-**Prashanthi Valusa**
-
-- GitHub: [prashanthi-web](https://github.com/prashanthi-web)
-
-## Acknowledgment
-
-Thanks to **Skill Nexis** for providing the opportunity to develop practical skills in Machine Learning and AI through structured learning, assignments, and mini-projects.
-
----
-
-*This repository will be updated throughout the internship to document additional assignments, projects, and learning outcomes.*
+This repository will be updated as additional internship assignments and projects are completed.
